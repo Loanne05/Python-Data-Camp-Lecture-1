@@ -27,6 +27,36 @@ full_sorted=sorted(full, reverse = False)#pag true mataas pababa, pag false maba
 # Print out full_sorted
 print(full_sorted)
 
+#sorted()
+#takes three argument iterable, key, reverse.
+#reverse = True sorts the iterable in the descending order.
+# vowels list
+py_list = ['e', 'a', 'u', 'o', 'i']
+print(sorted(py_list))
+
+#['a', 'e', 'i', 'o', 'u']
+
+# set
+py_set = {'e', 'a', 'u', 'o', 'i'}
+print(sorted(py_set, reverse=True))
+#['u', 'o', 'i', 'e', 'a']
+
+
+# take the second element for sort
+def take_second(elem):
+    return elem[1]
+
+
+# random list
+random = [(2, 2), (3, 4), (4, 1), (1, 3)]
+
+# sort list with key
+sorted_list = sorted(random, key=take_second)
+
+# print list
+print('Sorted list:', sorted_list)
+
+#Sorted list: [(4, 1), (2, 2), (1, 3), (3, 4)]
 
 #------------------------------------------
 
