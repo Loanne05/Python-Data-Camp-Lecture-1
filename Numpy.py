@@ -1,3 +1,7 @@
+"""NumPy is a Python library used for working with arrays.
+
+It also has functions for working in domain of linear algebra, fourier transform, and matrices."""
+
 #Numpy
 import numpy as np 
 height=([1.73, 1.68, 1.71, 1.89, 1.79])
@@ -70,7 +74,7 @@ import numpy as np
                     #0     1    2     3    4
 np_2d = np.array([[1.73, 1.68, 1.71, 1.89, 1.79]    #0
                  ,[65.4, 59.2, 63.6, 88.4, 68.7]])  #1
-shape = np_2d.shape
+shape = np_2d.shape #(2, 5)
 #print the 4th column
 print(np_2d[:,3])
 arraymatrix = np_2d[0][2] # row 1 column 3
@@ -84,6 +88,10 @@ print(arraymatrix)
 print(arraymatrix1)
 print(arraymatrix2)
 print(arraymatrix3)
+
+arraymatrix4 = np_2d[1,:1] #row 1, : starting from column 0 not including column1
+print(arraymatrix4)
+#[65.4]  
 
 #Your First 2D NumPy Array
 # Create baseball, a list of lists
